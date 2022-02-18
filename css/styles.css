@@ -61,7 +61,81 @@ body {
   .download-buttons {
     margin: 5% 3% 5% 0%;
   }
-  
+  /* apple styled button */
+.appleStyledButton {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background:#171717;
+  overflow: hidden;
+  border: 2px solid #495057;
+  color: #fff;
+}
+.appleStyledButton:hover {
+  color: #fff;
+}
+.appleStyledButton:hover:after {
+  width: 100%;
+}
+.appleStyledButton:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #495057;
+}
+
+/* android Button */
+
+.androidStyledButton {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #495057;
+  color: #495057;
+}
+.androidStyledButton:hover {
+  color: #fff;
+}
+.androidStyledButton:hover:after {
+  width: 100%;
+}
+.androidStyledButton:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #495057;
+}
+
   
   /* second section */
   #features {
